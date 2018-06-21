@@ -12,3 +12,4 @@ Technologies:
 - Mongoose 
 - MongoDB
 - custom libraries
+- passport
