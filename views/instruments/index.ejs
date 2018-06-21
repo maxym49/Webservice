@@ -1,0 +1,51 @@
+<% include ../partials/header %>
+   
+<% if(currentUser){ %>
+<div class="sidebar" onclick="togBar()">
+    <ul>
+        <li><a href="#">Categories <span class="sidebaricn sidebaricn-a"><i class="fas fa-book-open"></i></span></a></li>
+            <li><a href="#">Your profile <span class="sidebaricn sidebaricn-b"><i class="far fa-user"></i></span></a></li>
+         <li><a href="#">Change theme <span class="sidebaricn sidebaricn-c"><i class="far fa-file"></i></span></a></li>
+        <li><a href="/about">About <span class="sidebaricn sidebaricn-d"><i class="far fa-question-circle"></i></span></a></li>
+    </ul>
+</div>   
+<% } %>
+<div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1>Welcome To The MyInstrument!</h1>
+                <p>A to Z of Musical Instruments</p>
+                <p>
+                    <a class="btn btn-primary btn-large" href="/instruments/new">Add a new post</a>
+                </p>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Instruments:</h3>
+            </div>
+        </div>
+        <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+            <% instruments.forEach(function(instruments){ %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="<%= instruments.img %>">
+                        <div class="caption">
+                            <h4>
+                                 <%= instruments.name %>
+                            </h4>
+                        </div>
+                            <p>
+                                <a href="/instruments/<%= instruments._id %>" class="btn btn-primary">More info</a>
+                            </p>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+</div>
+<div class="rightbar">
+    <a href="#" onclick="youScroll.to('.container-fluid').start()" class="scrollup"><i class="fas fa-arrow-alt-circle-up"></i></a>
+</div>
+<% include ../partials/footer %>
+
+

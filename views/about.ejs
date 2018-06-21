@@ -1,0 +1,38 @@
+<% include ./partials/header %>
+
+<% if(currentUser){ %>
+<div class="sidebar" onclick="togBar()">
+    <ul>
+        <li><a href="#">Categories <span class="sidebaricn sidebaricn-a"><i class="fas fa-book-open"></i></span></a></li>
+            <li><a href="#">Your profile <span class="sidebaricn sidebaricn-b"><i class="far fa-user"></i></span></a></li>
+         <li><a href="#">Change theme <span class="sidebaricn sidebaricn-c"><i class="far fa-file"></i></span></a></li>
+        <li><a href="/about">About <span class="sidebaricn sidebaricn-d"><i class="far fa-question-circle"></i></span></a></li>
+    </ul>
+</div>   
+<% } %>
+
+<div class="container">
+    <h1 class="abheader page-header"><i class="fas fa-info-circle"></i> About Page</h1>
+    <div class=abparagraph>
+        <p>
+        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Nulla nec faucibus libero. Phasellus elit felis, accumsan et odio sed, dignissim laoreet magna. Curabitur metus quam, laoreet sed convallis ut, malesuada ac elit. Nulla fermentum porttitor tellus vel consectetur. Pellentesque vulputate, odio eu euismod suscipit, orci turpis mollis diam, a efficitur ipsum ligula sit amet lacus. Integer ac lorem sed dolor feugiat commodo. Nam tincidunt varius erat eget mattis. Pellentesque pulvinar semper sapien vel vulputate. In dolor erat, consectetur in odio nec, aliquet facilisis tellus. Suspendisse a cursus risus. Praesent sit amet nulla pulvinar, semper augue a, posuere ante. Donec dignissim sit amet purus eget scelerisque. Vivamus blandit, elit quis laoreet dictum, ligula orci venenatis ligula, vitae fermentum turpis tellus vitae ligula. Vestibulum non urna accumsan turpis congue condimentum vitae eu arcu. Nullam rutrum nisl arcu, et vehicula ligula dapibus eu. Duis suscipit urna sollicitudin est efficitur, lacinia lobortis nibh sagittis.
+        </p>
+        <p></p>
+        <p>
+        Vivamus tincidunt cursus pretium. Nam dignissim viverra suscipit. Phasellus quam lacus, semper id vehicula vitae, pretium ut nunc. Vivamus ac eros scelerisque, viverra purus gravida, venenatis justo. Aenean mollis condimentum vulputate. Phasellus pellentesque porttitor volutpat. Mauris sit amet leo quis massa ultrices ultricies eu sed est. <strong>Aliquam lobortis lorem mauris, ut egestas quam dictum eu. </strong>Praesent nibh mi, dapibus vitae erat quis, vulputate rutrum nisl. Nunc ut maximus tellus. Maecenas sodales gravida pharetra. Nam imperdiet sem arcu, vitae faucibus urna venenatis tempor. Mauris auctor ante eget dolor convallis, at finibus dui consequat. Proin vel dolor ut tellus sodales gravida vel eu risus.
+        </p>
+        <p></p>
+        <p>
+           Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas ultrices faucibus tortor eu interdum. Phasellus mauris elit, sagittis in risus nec, tincidunt venenatis quam. Vivamus sed augue vel erat scelerisque ultrices. Nunc consectetur, purus in dictum tincidunt, dolor nunc volutpat velit, eget aliquam velit elit eu risus. Donec placerat, diam sit amet ornare feugiat, turpis libero semper metus, quis ornare sapien nisi sollicitudin nisl. In hac habitasse platea dictumst. Quisque quam nibh, mattis sit amet congue quis, semper ut velit. Vestibulum at sodales erat. Vivamus vel aliquet augue, et dignissim libero. Suspendisse tempor rutrum neque ultrices maximus. Vestibulum nec ipsum feugiat, pharetra magna vitae, suscipit tortor. Mauris nec imperdiet enim. Donec et enim sit amet tortor sagittis gravida sit amet ut velit. Maecenas feugiat magna at felis efficitur, sit amet commodo diam vulputate. 
+        </p>
+        <p>Maecenas pretium, lacus id interdum bibendum, nisl mi euismod est, vitae pellentesque eros urna eget ipsum. Quisque blandit vestibulum ultricies. Sed gravida feugiat aliquam. Ut eget odio luctus, ullamcorper dolor vel, volutpat mauris. Donec porttitor ipsum accumsan sodales consequat. Mauris ornare nibh eu ex interdum ultricies. <strong>Vivamus nec tincidunt ligula. Donec orci nibh, vulputate sit amet arcu et, aliquam congue sapien.</strong> Nam porttitor molestie neque, sed porttitor neque tincidunt pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas mi a ultricies sagittis. Praesent in felis lobortis, ornare felis sit amet, luctus diam. Proin volutpat ipsum velit, auctor elementum nulla efficitur sed. Donec eget turpis feugiat, varius risus eu, hendrerit sapien. Duis gravida nulla tincidunt nibh sollicitudin, in ultricies turpis bibendum. Donec eleifend sed lorem vel dictum.</p>
+        
+        <div class="col-md-4 text-center" style="margin-left: 32.5%; margin-bottom: 30px;"> 
+        <a href="/instruments" class="btn btn-lg btn-default">Back</a>
+        </div>
+    </div>
+</div>
+
+
+
+<% include ./partials/footer %>

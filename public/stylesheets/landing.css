@@ -1,0 +1,84 @@
+body{
+    background-color: #000;
+}
+
+#wHeader{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+#wHeader h1{
+     color: #fff;
+     font-size: 100px;
+     
+}
+
+.slide { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slide li:nth-child(1) { 
+  background-image: url(https://images.unsplash.com/photo-1497032205916-ac775f0649ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d475654ecc26e766a4afb870a1f5c616&auto=format&fit=crop&w=1350&q=80);
+}
+.slide li:nth-child(2) { 
+  background-image: url(https://images.unsplash.com/photo-1420161900862-9a86fa1f5c79?ixlib=rb-0.3.5&s=27b416c01a4ca9471903eaeb609ee63b&auto=format&fit=crop&w=1350&q=80);
+  animation-delay: 10s; 
+}
+.slide li:nth-child(3) { 
+  background-image: url(https://images.unsplash.com/photo-1519479029449-38c9aed0f322?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=91dd0a9195a03b7d2646828ddf68f75e&auto=format&fit=crop&w=1352&q=80);
+  animation-delay: 20s; 
+}
+.slide li:nth-child(4) { 
+  background-image: url(https://images.unsplash.com/photo-1475744214834-0cb9be6eb226?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=35d21091ad60e51e8f62b91cd193eecc&auto=format&fit=crop&w=1350&q=80);
+  animation-delay: 30s; 
+}
+
+.slide li:nth-child(5) { 
+  background-image: url(https://images.unsplash.com/photo-1466584820433-9ad1cc6798f3?ixlib=rb-0.3.5&s=1c272723f93a410b7f588de2144c378a&auto=format&fit=crop&w=1355&q=80);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+.btn-success{
+    font-size: 36px;
+}

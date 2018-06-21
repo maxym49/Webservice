@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="">
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <title>MyInstrument</title>
+        <link rel="icon" type="image/svg" href="https://cdn2.iconfinder.com/data/icons/music-solid-icons-vol-1/48/042-256.png" />
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/"><i class="fas fa-music"></i><span class="heffect" onmouseover="moveLogo()">MyInstrument</span></a>
+                </div>
+                <div class="colapse navbar-colapse">
+                    <ul class="nav navbar-nav navbar-right">
+                       <% if(!currentUser) { %>
+                        
+                        <li>
+                            <a class="topsytnax" href="/login"><span>Login</span></a>
+                        </li>
+                        
+                        <li>
+                            <a class="topsytnax" href="/register"><span>Sign Up</span></a>
+                        </li>
+                        <% } else { %> 
+                        <li>
+                            <a class="topsytnax" href="#"><span>User: <%= currentUser.username %></span></a>
+                        </li>
+                        <li>
+                            <a class="topsytnax" href="/logout"><span>Logout</span></a>
+                        </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <% if(lout && lout.length > 0) { %>
+            <div class="alert alert-info" role="alert">
+                <%= lout %>
+            </div>
+            <% }%>
+            <% if(err && err.length > 0) { %>
+            <div class="alert alert-danger" role="alert">
+                <%= err %>
+            </div>
+            <% }%>
+            <% if(succomment && succomment.length > 0) { %>
+            <div class="alert alert-success" role="alert">
+                <%= succomment %>
+            </div>
+            <% }%>
+            <% if(delecomment && delecomment.length > 0) { %>
+            <div class="alert alert-warning" role="alert">
+                <%= delecomment %>
+            </div>
+            <% }%>
+            <% if(sucpost && sucpost.length > 0) { %>
+            <div class="alert alert-success" role="alert">
+                <%= sucpost %>
+            </div>
+            <% }%>
+            <% if(delpost && delpost.length > 0) { %>
+            <div class="alert alert-warning" role="alert">
+                <%= delpost %>
+            </div>
+            <% }%>
+            <% if(welcome && welcome.length > 0) { %>
+            <div class="alert alert-success" role="alert">
+                <%= welcome %>
+            </div>
+            <% }%>
+             <% if(registererror && registererror.length > 0) { %>
+            <div class="alert alert-danger" role="alert">
+                <%= registererror %>
+            </div>
+            <% }%>
+        </div>
+        
+    
+    
+        
