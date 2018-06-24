@@ -1,7 +1,7 @@
 <% include ../partials/header %>
    
 <% if(currentUser){ %>
-<div class="sidebar" onclick="togBar()">
+<div class="sidebar hidden-xs hidden-sm" onclick="togBar()" onload="hideSideBar()">
     <ul>
         <li><a href="#">Categories <span class="sidebaricn sidebaricn-a"><i class="fas fa-book-open"></i></span></a></li>
             <li><a href="#">Your profile <span class="sidebaricn sidebaricn-b"><i class="far fa-user"></i></span></a></li>

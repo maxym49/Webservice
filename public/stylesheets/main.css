@@ -105,16 +105,24 @@ span .img-responsive{
 .sidebar{
     position: fixed;
     width: 200px;
-    height: 21.4%;
+    height: 14.6em;
     background-color: #3BC753;
     left: -120px;
     transition: all 150ms linear;
-   
+    display: block;
 }
+
+
+
 
 .sidebar.active{
     left: 0;
    
+   
+}
+.sidebar.deactive{
+    left: 0;
+    display: none;
 }
 
 .sidebar ul li {
@@ -313,4 +321,8 @@ a.lead{
 
 .fixfooter{
     margin-bottom: 450px;
+}
+
+.fixfootercomment{
+    margin-bottom: 600px;
 }
